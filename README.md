@@ -6,7 +6,7 @@ A dumpster for code related stuff, will reorganize in the future.
 > git commit --allow-empty -m "Message here!"
 > git push heroku master
 
-### Passing props to React children or prop element
+### Passing props to React children or prop element using React.cloneElement
 ```
 <Modal
  formComponent={<RandomForm />}
@@ -28,5 +28,17 @@ class Modal extends React.Component {
       { React.cloneElement(this.props.formComponent, { someRefHandler }) }
     )
   }
+}
+
+const RandomForm = ({ someRefHandler }) => {
+ return (
+  <form
+   ref={
+    ref => someRefHandler(ref)}
+  >
+   <input />
+  </form>
+ )
+         
 }
 ```
