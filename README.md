@@ -7,9 +7,9 @@ A dumpster for code related stuff, will reorganize in the future.
 > git push heroku master
 
 ### Passing props to React children or prop element
-> ```
+```
 <Modal
-  formComponent={<RandomForm />}
+ formComponent={<RandomForm />}
 />
 
 class Modal extends React.Component {
