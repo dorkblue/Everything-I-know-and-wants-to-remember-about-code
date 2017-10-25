@@ -7,6 +7,7 @@ A dumpster for code related stuff, will reorganize in the future.
 > git push heroku master
 
 ### Passing props to React children or prop element using React.cloneElement
+https://stackoverflow.com/questions/32370994/how-to-pass-props-to-this-props-children
 ```
 <Modal
  formComponent={<RandomForm />}
