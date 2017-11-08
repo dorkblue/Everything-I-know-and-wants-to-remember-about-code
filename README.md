@@ -43,3 +43,6 @@ const RandomForm = ({ someRefHandler }) => {
          
 }
 ```
+
+### Mongoose: compare ObjectId and objectId string
+> ObjectId.equals(stringId)
