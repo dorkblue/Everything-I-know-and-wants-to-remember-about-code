@@ -54,8 +54,8 @@ Include static.json file in root https://github.com/mars/create-react-app-buildp
 ```
 { 
 	"root": "build/",
-  "routes": {
-    "/**": "index.html"
+ 	"routes": {
+	  "/**": "index.html"
 	},
 	"https_only": true
 }
