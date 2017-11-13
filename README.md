@@ -46,3 +46,18 @@ const RandomForm = ({ someRefHandler }) => {
 
 ### Mongoose: compare ObjectId and objectId string
 > ObjectId.equals(stringId)
+
+
+### CRA HEROKU 404 Not Found NGINX Issue
+Include static.json file in root https://github.com/mars/create-react-app-buildpack#customization
+
+```
+{ 
+	"root": "build/",
+  "routes": {
+    "/**": "index.html"
+	},
+	"https_only": true
+}
+
+```
