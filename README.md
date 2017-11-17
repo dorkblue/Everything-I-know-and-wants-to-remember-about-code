@@ -61,3 +61,8 @@ Include static.json file in root https://github.com/mars/create-react-app-buildp
 }
 
 ```
+
+### Creating Array with length according to a number
+```
+Array.from(new Array(quantity))
+```
