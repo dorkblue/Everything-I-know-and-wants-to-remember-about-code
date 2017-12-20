@@ -66,3 +66,10 @@ Include static.json file in root https://github.com/mars/create-react-app-buildp
 ```
 Array.from(new Array(quantity))
 ```
+
+### Storing Multiline Text, and displaying Multiline Text in HTML
+```
+	<p style={{ whiteSpace: 'pre-line' }}>
+		{'Hello Robin\n\n\nI can enter next line\n\n- addon 1\n- addon 2'}
+	</p>
+```
