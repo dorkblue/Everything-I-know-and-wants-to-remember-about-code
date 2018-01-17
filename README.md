@@ -73,3 +73,16 @@ Array.from(new Array(quantity))
 		{'Hello Robin\n\n\nI can enter next line\n\n- addon 1\n- addon 2'}
 	</p>
 ```
+
+## "Break out" of a parent's containing width to take the full screen of a page w/this nice utility class:
+
+```
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+```
