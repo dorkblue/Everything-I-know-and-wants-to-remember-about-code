@@ -86,3 +86,8 @@ Array.from(new Array(quantity))
   margin-right: -50vw;
 }
 ```
+
+## Format to two decimals
+```
+Math.round(v * 100) / 100
+```
