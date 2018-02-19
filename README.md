@@ -87,7 +87,9 @@ Array.from(new Array(quantity))
 }
 ```
 
-## Format to two decimals
+## Format to two decimals & dealing with floating point
 ```
 Math.round(v * 100) / 100
+
+parseFloat(v).toFixed(2)
 ```
