@@ -93,3 +93,12 @@ Math.round(v * 100) / 100
 
 parseFloat(v).toFixed(2)
 ```
+
+## Display boundaries of element without affecting layout for debugging
+source: https://twitter.com/adamwathan/status/959078631434731521/photo/1
+```
+* {
+ outline: 1px solid red !important;
+}
+
+```
