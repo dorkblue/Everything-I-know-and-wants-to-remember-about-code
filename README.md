@@ -74,7 +74,7 @@ Array.from(new Array(quantity))
 	</p>
 ```
 
-## "Break out" of a parent's containing width to take the full screen of a page w/this nice utility class:
+### "Break out" of a parent's containing width to take the full screen of a page w/this nice utility class:
 
 ```
 .full-width {
@@ -87,18 +87,24 @@ Array.from(new Array(quantity))
 }
 ```
 
-## Format to two decimals & dealing with floating point
+### Format to two decimals & dealing with floating point
 ```
 Math.round(v * 100) / 100
 
 parseFloat(v).toFixed(2)
 ```
 
-## Display boundaries of element without affecting layout for debugging
+### Display boundaries of element without affecting layout for debugging
 source: https://twitter.com/adamwathan/status/959078631434731521/photo/1
 ```
 * {
  outline: 1px solid red !important;
 }
 
+```
+
+### Great color combination for red error boxes
+```
+ color: #d8000c;
+ background-color: #ffbaba;
 ```
