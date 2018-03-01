@@ -1,6 +1,12 @@
 # Everything-I-know-and-wants-to-remember-about-code
 A dumpster for code related stuff, will reorganize in the future.
 
+### Design Cheat sheets
+https://codepen.io/tyrellrummage/pen/ZJPXgy - Little UI details from @steveschoger
+https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886 - 7 Practical Tips for Cheating at Design by Adam Wathan & Steve Schoger
+https://atomiks.github.io/30-seconds-of-css/ - 30 Seconds of CSS, useful CSS snippets & utility
+https://assortment.io/posts/handling-long-titles-with-truncation - Handling long title with truncation
+
 
 ### Redeploy to Heroku without changes
 > git commit --allow-empty -m "Message here!"
