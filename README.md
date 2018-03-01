@@ -108,3 +108,16 @@ source: https://twitter.com/adamwathan/status/959078631434731521/photo/1
  color: #d8000c;
  background-color: #ffbaba;
 ```
+
+### Start FTP server on Mac localhost on Bash
+To start server
+```
+sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist
+ftp localhost
+```
+
+To shut down server
+```
+Ctrl + C
+sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist
+```
