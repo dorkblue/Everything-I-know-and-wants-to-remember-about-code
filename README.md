@@ -118,6 +118,6 @@ ftp localhost
 
 To shut down server
 ```
-Ctrl + C
+exit
 sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist
 ```
