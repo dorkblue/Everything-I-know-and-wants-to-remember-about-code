@@ -127,3 +127,17 @@ To shut down server
 exit
 sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist
 ```
+
+### Create alias (short cmd to run commands) on bash / hyper 
+To create new alias
+```
+alias [name-of-alias]='[command to run]'
+
+ex: alias ftp-launch='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'
+
+```
+
+To remove alias
+```
+unalias [name-of-alias]
+```
