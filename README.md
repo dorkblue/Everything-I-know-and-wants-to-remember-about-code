@@ -112,10 +112,18 @@ source: https://twitter.com/adamwathan/status/959078631434731521/photo/1
 
 ```
 
-### Great color combination for red error boxes
+### Great color combination for notification boxes
+
+Error
 ```
  color: #d8000c;
  background-color: #ffbaba;
+```
+
+Done / Success
+```
+ color: #5d872c;
+ background-color: #e3f1c4;
 ```
 
 ### Start FTP server on Mac localhost on Bash
