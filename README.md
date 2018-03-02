@@ -141,3 +141,15 @@ To remove alias
 ```
 unalias [name-of-alias]
 ```
+
+### Reset `<input type=file />` for React
+```
+<input
+ ref={ref => this.fileInput = ref}
+/>
+```
+
+When running reset function on React / any form reset methods, set
+```
+this.fileInput && (this.fineInput.value = null)
+```
