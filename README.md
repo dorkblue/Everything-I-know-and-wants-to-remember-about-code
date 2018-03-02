@@ -146,6 +146,8 @@ unalias [name-of-alias]
 ```
 
 ### Reset `<input type=file />` for React
+
+https://github.com/erikras/redux-form/issues/769
 ```
 <input
  ref={ref => this.fileInput = ref}
