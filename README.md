@@ -189,4 +189,16 @@ May have to fix some conflicts here, when done run
 and finally
 `git push origin master`
 
+### Find process that is using a certain `<port>`
+	
+In terminal
+```
+sudo lsof -i tcp:<port> 
+```
+
+To Kill
+```
+kill -9 <PID>
+```
+
 
