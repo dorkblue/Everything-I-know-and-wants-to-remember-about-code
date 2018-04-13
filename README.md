@@ -201,4 +201,41 @@ To Kill
 kill -9 <PID>
 ```
 
+### Recursive function to target key-value in a multi-level nested Object
 
+```
+const _document = {
+  user: { name: 'Tom' },
+  six: 6,
+  seven: {
+    eight: 8
+  },
+  one: {
+    two: {
+      three: {
+        four: {
+          five: 5
+        }
+      }
+    }
+  }
+}
+
+
+const recursive = function(_document, target, index = 0) {
+  const trail = target.split('.')
+  
+  const nextDoc = doc[trail[index]]
+  
+  while(index !== trail.length - 1) {
+    return recursive(nextDoc, target, index + 1)
+  }
+  
+  return nextDoc
+}
+
+const result_one = recursive(_document, 'one.two.three.four.five') // should return 5
+const result_two = recursive(_document, 'six') // should return 6
+const result_three = recursive(_document, 'user') // should { name: 'Tom' }
+
+```
