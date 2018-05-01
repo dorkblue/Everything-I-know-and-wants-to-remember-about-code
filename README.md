@@ -239,3 +239,10 @@ const result_two = recursive(_document, 'six') // should return 6
 const result_three = recursive(_document, 'user') // should { name: 'Tom' }
 
 ```
+
+### NPM script to build & deploy CRA Apps to Surge
+```
+ "scripts": {
+   "surge-deploy": "yarn build && echo serone.com.sg > build/CNAME && mv build/index.html build/200.html && surge -p build/"
+  }
+```
