@@ -246,3 +246,18 @@ const result_three = recursive(_document, 'user') // should { name: 'Tom' }
    "surge-deploy": "yarn build && echo serone.com.sg > build/CNAME && mv build/index.html build/200.html && surge -p build/"
   }
 ```
+
+### Better git log
+https://coderwall.com/p/euwpig/a-better-git-log
+
+In terminal, command to set up
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
+
+To view better git log
+```
+git lg
+git lg -p
+```
