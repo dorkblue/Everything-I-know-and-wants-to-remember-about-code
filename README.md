@@ -261,3 +261,9 @@ To view better git log
 git lg
 git lg -p
 ```
+
+### Match string with space
+https://regex101.com/r/yA6xU3/1
+```
+^[\S]+$
+```
