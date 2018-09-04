@@ -267,3 +267,27 @@ https://regex101.com/r/yA6xU3/1
 ```
 ^[\S]+$
 ```
+
+### Removing & Adding Items to Arrays
+
+Remove
+```
+function (array, index) {
+ return [
+  ...array.splice(0, index),
+  ...array.splice(index + 1)
+ ]
+}
+```
+
+Add
+
+```
+function (array, index, item) {
+ return [
+  ...array.splice(0, index),
+  item,
+  ...array.splice(index + 1)
+ ]
+}
+```
