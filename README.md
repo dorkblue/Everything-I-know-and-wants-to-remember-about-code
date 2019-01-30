@@ -292,9 +292,16 @@ function (array, index, item) {
 }
 ```
 
-### Better git log
+### git amend latest commit author
 https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit/28845565
 
 ```
 git commit --amend --author="Author Name <email@address.com>"
+```
+
+### start dynamodb locally
+Run in terminal
+```
+cd < directory with DynamoDBLocal.jar >
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
