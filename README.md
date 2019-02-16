@@ -305,3 +305,12 @@ Run in terminal
 cd < directory with DynamoDBLocal.jar >
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
+
+### Python Requests Library with JSON body
+```python
+headers = { 'Content-type': 'application/json' }
+
+body = { "program": "Delivery", "arg": { "dropoffs": [ { "location": "Reception" } ] } }
+
+s = requests.post("http://randomlink/api/relay", data=json.dumps(body), headers=headers)
+```
