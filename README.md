@@ -268,26 +268,15 @@ https://regex101.com/r/yA6xU3/1
 ^[\S]+$
 ```
 
-### Removing & Adding Items to Arrays
+### Removing
 
 Remove
 ```
+// remove item at index
 function (array, index) {
  return [
-  ...array.splice(0, index),
-  ...array.splice(index + 1)
- ]
-}
-```
-
-Add
-
-```
-function (array, index, item) {
- return [
-  ...array.splice(0, index),
-  item,
-  ...array.splice(index + 1)
+  ...array.slice(0, index),
+  ...array.slice(index + 1)
  ]
 }
 ```
